@@ -1,0 +1,7 @@
+name: cookiecutter-pro
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - cookiecutter
+prefix: /home/zeroroy/anaconda3/envs/cookiecutter-pro
