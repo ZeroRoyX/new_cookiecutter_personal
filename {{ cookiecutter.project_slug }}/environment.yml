@@ -1,4 +1,5 @@
 # conda env create --file environment.yml
+# mamba env create --file environment.yml
 name: {{ cookiecutter.project_slug }}
 channels:
   - anaconda
@@ -31,4 +32,14 @@ dependencies:
   {% else %}
   - python={{ cookiecutter.python_version }}
   - pip
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - jupyter
+  - jupyterlab
+  - pathlib
+  - pyprojroot
+  - pip:
+    - pyhere
   {% endif %}
