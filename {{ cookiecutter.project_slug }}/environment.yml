@@ -32,14 +32,21 @@ dependencies:
   {% else %}
   - python={{ cookiecutter.python_version }}
   - pip
-  - pandas
-  - numpy
-  - matplotlib
-  - seaborn
-  - jupyter
-  - jupyterlab
+  # - pandas
+  # - numpy
+  # - matplotlib
+  # - seaborn
+  # - jupyter
+  # - jupyterlab
   - pathlib
   - pyprojroot
   - pip:
     - pyhere
+    - numpy
+    - matplotlib
+    - pandas
+    - seaborn
+    - jupyter
+    - jupyterlab
+
   {% endif %}
